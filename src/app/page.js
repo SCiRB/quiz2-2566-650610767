@@ -22,14 +22,7 @@ export default function HomePage() {
           OwnerLikeNum={"100 คน"}
         />
 
-        <Comment
-          userImagePath ="comments.userImagePath"
-          username="comments.username"
-          commentText="comments.commentText"
-          likeNum="comments.likeNum"
-          replies="comments.replies"
-        />
-<div>{Comment.map((comments) => (
+        <div>{Comment.map((comments) => (
           <Comment
             userImagePath={comments.userImagePath}
             username={comments.username}
@@ -38,7 +31,7 @@ export default function HomePage() {
             replies={comments.replies}
           />
         ))}</div>
-        {/* map-loop render Comment component here */}
+        
       </div>
     </div>
   );
