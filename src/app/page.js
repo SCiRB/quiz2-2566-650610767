@@ -26,7 +26,7 @@ export default function HomePage() {
           <Comment
             userImagePath={comments.userImagePath}
             username={comments.username}
-            replyText={comments.replyText}
+            commentText={comments.commentText}
             likeNum={comments.likeNum}
             replies={comments.replies}
           ></Comment>
