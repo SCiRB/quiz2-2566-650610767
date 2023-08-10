@@ -18,7 +18,7 @@ export const Comment = ({
         <img src="/like.svg" width={20}></img>
         <span className="text-muted">{likeNum}</span>
       </div>
-      <div>{Reply.map((replies) => (
+      <div>{replies.map((replies) => (
           <Reply
             userImagePath={replies.userImagePath}
             username={replies.username}
